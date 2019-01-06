@@ -1,0 +1,114 @@
+@import "compass", "compass/reset", "compass/css3", "compass/css3/font-face", "media-queries", "compass/css3/background-size", "compass/css3/border-radius", "compass/css3/transition";
+
+// -------------------------------------------------------------------------------------------------------------- MIXINS
+@mixin change-extra-large-screen {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin change-large-screen {
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin change-medium-screen {
+  @media only screen and (min-width: 720px) and (max-width: 991px) {
+    @content;
+  }
+}
+@mixin change-small-screen {
+  @media only screen and (min-width: 576px) and (max-width: 719px) {
+    @content;
+  }
+}
+@mixin change-extra-small-screen {
+  @media only screen and (max-width: 575px) {
+    @content;
+  }
+}
+
+$blackColor: #000000;
+$whiteColor: #ffffff;
+$yellowColor: #cc9900;
+
+.container-fluid {
+  padding-right: 165px;
+  padding-left: 165px;
+}
+button, a {
+  cursor: pointer;
+}
+h1 {
+  font-family: 'Yeseva One', cursive;
+}
+
+// ------------------------------------------------------------------------------------------------------------- SPRITES
+
+@import "compass/utilities/sprites";
+$icons-layout: vertical;
+$icons-spacing: 10px;
+$icons-sprite-dimensions: true;
+@import "icons/*.png";
+@include all-icons-sprites;
+
+// -------------------------------------------------------------------------------------------------------------- HEADER
+#header {
+  color: $whiteColor;
+  padding-bottom: 130px;
+  background-image: url(../images/background_header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+    .navbar {
+      background-color: transparent;
+      .nav-link {
+        font-size: 21px;
+        color: $whiteColor;
+        font-family: 'Gentium Book Basic', serif;
+        letter-spacing: 2px;
+        padding-left: 50px;
+      }
+      .icons {
+        margin-left: 10px;
+      }
+    }
+  .header-content {
+    text-align: center;
+    h1 {
+      padding-top: 140px;
+      font-size: 90px;
+    }
+    img {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    button {
+      text-transform: uppercase;
+      color: $whiteColor;
+      padding: 15px 35px 15px 35px;
+      font-family: 'Lato', sans-serif;
+    }
+    .btn-black {
+      background-color: rgba(0, 0, 0, 0.30);
+      border: 1px solid rgba(0, 0, 0, 0.30);
+      margin-right: 10px;
+    }
+    .btn-white {
+      background-color: rgba(255, 255, 255, 0.30);
+      border: 1px solid rgba(255, 255, 255, 0.30);
+      margin-left: 10px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+// -------------------------------------------------------------------------------------------------------------- FOOTER
+.footer {
+  background-color: #191919;
+}
