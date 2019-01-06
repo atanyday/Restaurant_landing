@@ -30,17 +30,33 @@
 $blackColor: #000000;
 $whiteColor: #ffffff;
 $yellowColor: #cc9900;
+$greyColor: #4c4c4c;
 
+.font-gentium {
+  font-family: 'Gentium Book Basic', serif;
+}
+.font-lato {
+  font-family: 'Lato', sans-serif;
+}
 .container-fluid {
   padding-right: 165px;
   padding-left: 165px;
 }
+h1, h2 {
+  font-family: 'Yeseva One', cursive;
+}
 button, a {
   cursor: pointer;
 }
-h1 {
-  font-family: 'Yeseva One', cursive;
+.divider {
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
+.narrow-div {
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
 
 // ------------------------------------------------------------------------------------------------------------- SPRITES
 
@@ -62,9 +78,9 @@ $icons-sprite-dimensions: true;
     .navbar {
       background-color: transparent;
       .nav-link {
+        @extend .font-gentium;
         font-size: 21px;
         color: $whiteColor;
-        font-family: 'Gentium Book Basic', serif;
         letter-spacing: 2px;
         padding-left: 50px;
       }
@@ -83,25 +99,45 @@ $icons-sprite-dimensions: true;
       padding-bottom: 30px;
     }
     button {
+      @extend .font-lato;
       text-transform: uppercase;
       color: $whiteColor;
       padding: 15px 35px 15px 35px;
-      font-family: 'Lato', sans-serif;
     }
     .btn-black {
       background-color: rgba(0, 0, 0, 0.30);
-      border: 1px solid rgba(0, 0, 0, 0.30);
+      border: 1px solid rgba(0, 0, 0, 0.20);
       margin-right: 10px;
     }
     .btn-white {
       background-color: rgba(255, 255, 255, 0.30);
-      border: 1px solid rgba(255, 255, 255, 0.30);
+      border: 1px solid rgba(255, 255, 255, 0.20);
       margin-left: 10px;
     }
   }
 }
-
-
+// --------------------------------------------------------------------------------------------------------------- ABOUT
+#about {
+  text-align: center;
+  background-image: url(../images/about_pattern.jpg);
+  background-repeat: repeat;
+  background-position: center top;
+  h2 {
+    color: $yellowColor;
+    margin-top: 90px;
+    font-size: 36px;
+  }
+  p {
+    color: $greyColor;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 50px;
+  }
+  .about-dish {
+    margin-top: 40px;
+    padding-bottom: 90px;
+  }
+}
 
 
 

@@ -63,20 +63,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 34, ../sass/stylesheet.scss */
+/* line 35, ../sass/stylesheet.scss */
+.font-gentium, #header .navbar .nav-link {
+  font-family: 'Gentium Book Basic', serif;
+}
+
+/* line 38, ../sass/stylesheet.scss */
+.font-lato, #header .header-content button {
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 41, ../sass/stylesheet.scss */
 .container-fluid {
   padding-right: 165px;
   padding-left: 165px;
 }
 
-/* line 38, ../sass/stylesheet.scss */
+/* line 45, ../sass/stylesheet.scss */
+h1, h2 {
+  font-family: 'Yeseva One', cursive;
+}
+
+/* line 48, ../sass/stylesheet.scss */
 button, a {
   cursor: pointer;
 }
 
-/* line 41, ../sass/stylesheet.scss */
-h1 {
-  font-family: 'Yeseva One', cursive;
+/* line 51, ../sass/stylesheet.scss */
+.divider {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+/* line 55, ../sass/stylesheet.scss */
+.narrow-div {
+  padding-right: 80px;
+  padding-left: 80px;
 }
 
 /* line 64, icons/*.png */
@@ -106,7 +128,7 @@ h1 {
   width: 19px;
 }
 
-/* line 55, ../sass/stylesheet.scss */
+/* line 71, ../sass/stylesheet.scss */
 #header {
   color: #ffffff;
   padding-bottom: 130px;
@@ -115,57 +137,81 @@ h1 {
   background-size: cover;
   background-position: center top;
 }
-/* line 62, ../sass/stylesheet.scss */
+/* line 78, ../sass/stylesheet.scss */
 #header .navbar {
   background-color: transparent;
 }
-/* line 64, ../sass/stylesheet.scss */
+/* line 80, ../sass/stylesheet.scss */
 #header .navbar .nav-link {
   font-size: 21px;
   color: #ffffff;
-  font-family: 'Gentium Book Basic', serif;
   letter-spacing: 2px;
   padding-left: 50px;
 }
-/* line 71, ../sass/stylesheet.scss */
+/* line 87, ../sass/stylesheet.scss */
 #header .navbar .icons {
   margin-left: 10px;
 }
-/* line 75, ../sass/stylesheet.scss */
+/* line 91, ../sass/stylesheet.scss */
 #header .header-content {
   text-align: center;
 }
-/* line 77, ../sass/stylesheet.scss */
+/* line 93, ../sass/stylesheet.scss */
 #header .header-content h1 {
   padding-top: 140px;
   font-size: 90px;
 }
-/* line 81, ../sass/stylesheet.scss */
+/* line 97, ../sass/stylesheet.scss */
 #header .header-content img {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 85, ../sass/stylesheet.scss */
+/* line 101, ../sass/stylesheet.scss */
 #header .header-content button {
   text-transform: uppercase;
   color: #ffffff;
   padding: 15px 35px 15px 35px;
-  font-family: 'Lato', sans-serif;
 }
-/* line 91, ../sass/stylesheet.scss */
+/* line 107, ../sass/stylesheet.scss */
 #header .header-content .btn-black {
   background-color: rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   margin-right: 10px;
 }
-/* line 96, ../sass/stylesheet.scss */
+/* line 112, ../sass/stylesheet.scss */
 #header .header-content .btn-white {
   background-color: rgba(255, 255, 255, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   margin-left: 10px;
 }
 
-/* line 112, ../sass/stylesheet.scss */
+/* line 120, ../sass/stylesheet.scss */
+#about {
+  text-align: center;
+  background-image: url(../images/about_pattern.jpg);
+  background-repeat: repeat;
+  background-position: center top;
+}
+/* line 125, ../sass/stylesheet.scss */
+#about h2 {
+  color: #cc9900;
+  margin-top: 90px;
+  font-size: 36px;
+}
+/* line 130, ../sass/stylesheet.scss */
+#about p {
+  color: #4c4c4c;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 50px;
+}
+/* line 136, ../sass/stylesheet.scss */
+#about .about-dish {
+  margin-top: 40px;
+  padding-bottom: 90px;
+}
+
+/* line 148, ../sass/stylesheet.scss */
 .footer {
   background-color: #191919;
 }
