@@ -56,6 +56,12 @@ button, a {
   padding-right: 80px;
   padding-left: 80px;
 }
+.p-style {
+  color: $greyColor;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 50px;
+}
 
 
 // ------------------------------------------------------------------------------------------------------------- SPRITES
@@ -105,12 +111,12 @@ $icons-sprite-dimensions: true;
       padding: 15px 35px 15px 35px;
     }
     .btn-black {
-      background-color: rgba(0, 0, 0, 0.30);
+      background-color: rgba(0, 0, 0, 0.50);
       border: 1px solid rgba(0, 0, 0, 0.20);
       margin-right: 10px;
     }
     .btn-white {
-      background-color: rgba(255, 255, 255, 0.30);
+      background-color: rgba(255, 255, 255, 0.50);
       border: 1px solid rgba(255, 255, 255, 0.20);
       margin-left: 10px;
     }
@@ -128,18 +134,41 @@ $icons-sprite-dimensions: true;
     font-size: 36px;
   }
   p {
-    color: $greyColor;
-    font-size: 16px;
-    line-height: 24px;
-    padding-bottom: 50px;
+    @extend .p-style;
   }
   .about-dish {
     margin-top: 40px;
     padding-bottom: 90px;
   }
 }
-
-
+// --------------------------------------------------------------------------------------------------------- INGREDIENTS
+#ingredients {
+  text-align: center;
+  background-image: url(../images/background_ingredients.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  padding-bottom: 100px;
+  .ingredients-section {
+    background-color: rgba(0, 0, 0, 0.50);
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    padding: 70px 60px;
+    margin-top: 100px;
+    h2 {
+      color: $whiteColor;
+      font-size: 36px;
+    }
+    p {
+      @extend .p-style;
+      color: $whiteColor;
+      padding-bottom: 60px;
+    }
+    img:nth-child(5) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+}
 
 
 
